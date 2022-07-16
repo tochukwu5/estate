@@ -31,10 +31,19 @@
 // }
 
 
-const text =
+const time = new Date().getHours();
+let text; // for speech synthesis
 
-" Good day, you are welcome to my real estate website designed by david, feel free to check it and have fun";
-
+if (time < 12) {
+  text = " Good morning, you are welcome to my real estate website designed by david, feel free to check it and have fun";
+} else if (time < 16) {
+  text = " Good afternoon, you are welcome to my real estate website designed by david, feel free to check it and have fun";
+} 
+else if (time < 18) {
+  text = " Good day, you are welcome to my real estate website designed by david, feel free to check it and have fun";
+} else {
+  text = " Good evening, you are welcome to my real estate website designed by david, feel free to check it and have fun";
+}
 
 const speakNow = () => {
 
