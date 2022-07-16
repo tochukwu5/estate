@@ -491,8 +491,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #fh5co-hero {
-  height: 100vh;
-  width: 100vw;
+  min-height: 700px;
   background: #fff url(images/loader.gif) no-repeat center center;
 }
 #fh5co-hero .flexslider {
